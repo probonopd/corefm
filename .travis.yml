@@ -20,7 +20,7 @@ script:
   - sudo make -j$(nproc) install 
   - cd ..
   # libcsys, a dependency
-  - git clone libcsys
+  - git clone https://github.com/rahmanshaber/libcsys
   - cd libcsys
   - qmake CONFIG+=release PREFIX=/usr
   - make -j$(nproc)
